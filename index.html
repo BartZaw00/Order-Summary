@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INVO Academy JS Starter with Vite</title>
+    <title>Order Summary</title>
   </head>
 
   <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
@@ -13,8 +13,12 @@
     <div id="home-page">
       <div class="c-section">
         <div class="c-summary-box">
-          <img
+          <img class="c-summary-box__photo"
             src="/public/images/order-summary.png"
+            alt="order summary photo"
+          />
+          <img class="c-summary-box__photo-small"
+            src="/public/images/order-summary-tablet.png"
             alt="order summary photo"
           />
           <div class="c-summary-box__content">
@@ -38,7 +42,6 @@
                   <span class="c-summary-plan__description">$58.99 / year</span>
                 </div>
               </div>
-
               <a class="c-summary-plan__change-btn" href="#">Change</a>
             </div>
           </div>

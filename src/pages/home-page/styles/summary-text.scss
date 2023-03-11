@@ -1,21 +1,36 @@
 .c-summary-text {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
-    margin: 0 39.5px 40px 39.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  margin: 0 39.5px;
+
+  &__title {
+    color: var(--color-title);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  &__description {
+    color: var(--color-body);
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .c-summary-text {
+    margin: 0;
 
     &__title {
-        color: var(--color-title);
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 44px;
+      font-size: 24px;
+      line-height: 33px;
     }
 
     &__description {
-        color: var(--color-body);
-        line-height: 26px;
-        letter-spacing: -0.01em;
+      font-size: 14px;
+      line-height: 22px;
     }
+  }
 }

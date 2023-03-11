@@ -5,8 +5,15 @@
   display: flex;
   flex-direction: column;
 
+  &__photo-small {
+    display: none;
+  }
+
   &__content {
     margin: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
   &__payment-btn {
@@ -21,14 +28,56 @@
     line-height: 26px;
     letter-spacing: -0.01em;
     text-align: center;
+    cursor: pointer;
+  }
+
+  &__payment-btn:hover {
+    background-color: var(--color-button-hover);
   }
 
   &__cancel-btn {
+    align-self: center;
     color: var(--color-title);
     font-weight: 700;
-    line-height: 26px;
+    line-height: 27px;
     letter-spacing: -0.01em;
     margin-bottom: 32px;
     text-align: center;
+    text-underline-offset: 4px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .c-summary-box {
+    max-width: 343px;
+
+    &__photo {
+      display: none;
+    }
+
+    &__photo-small {
+      display: block;
+    }
+
+    &__content {
+      margin-top: 40px;
+      gap: 32px;
+    }
+
+    &__cancel-btn {
+      font-size:14px;
+      line-height: 22px;
+      margin-bottom: 28px;
+      text-underline-offset: 2px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .c-summary-box {
+    &__cancel-btn {
+      margin-bottom: 24px;
+    }
+  }
+}
+
