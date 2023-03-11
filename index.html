@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
+
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+  <body>
+    <div id="home-page">
+      <div class="c-section">
+        <div class="c-summary-box">
+          <img
+            src="/public/images/order-summary.png"
+            alt="order summary photo"
+          />
+          <div class="c-summary-box__content">
+            <div class="c-summary-text">
+              <span class="c-summary-text__title">Order Summary</span>
+              <p class="c-summary-text__description">
+                You're close! Confirm your purchase and complete your order in
+                the next step
+              </p>
+            </div>
+            <div class="c-summary-plan">
+              <div class="c-summary-plan__content">
+                <img
+                  class="c-summary-plan__icon"
+                  src="/public/images/summary-icon.svg"
+                  alt="summary icon"
+                />
+                <div class="c-summary-plan__border"></div>
+                <div class="c-summary-plan__details">
+                  <span class="c-summary-plan__title">Annual Plan</span>
+                  <span class="c-summary-plan__description">$58.99 / year</span>
+                </div>
+              </div>
+
+              <a class="c-summary-plan__change-btn" href="#">Change</a>
+            </div>
+          </div>
+          <button class="c-summary-box__payment-btn">Proceed to Payment</button>
+          <a class="c-summary-box__cancel-btn" href="#">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script
+      type="module"
+      src="/src/pages/home-page/scripts/home-page.js"
+    ></script>
+  </body>
+</html>
