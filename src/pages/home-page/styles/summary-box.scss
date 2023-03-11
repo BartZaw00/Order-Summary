@@ -35,6 +35,10 @@
     background-color: var(--color-button-hover);
   }
 
+  &__payment-btn--hide {
+    display: none;
+  }
+
   &__cancel-btn {
     align-self: center;
     color: var(--color-title);
@@ -65,7 +69,7 @@
     }
 
     &__cancel-btn {
-      font-size:14px;
+      font-size: 14px;
       line-height: 22px;
       margin-bottom: 28px;
       text-underline-offset: 2px;
@@ -80,4 +84,3 @@
     }
   }
 }
-

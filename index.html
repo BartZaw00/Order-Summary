@@ -45,7 +45,13 @@
               <a class="c-summary-plan__change-btn" href="#">Change</a>
             </div>
           </div>
-          <button class="c-summary-box__payment-btn">Proceed to Payment</button>
+          <div id="loader" class="c-loader">
+            <div id="percent" class="c-loader__percent">100%</div>
+            <div class="c-loader__progress-bar">
+              <div id="progress" class="c-loader__progress"></div>
+            </div>
+          </div>
+          <button id="proceed-btn" class="c-summary-box__payment-btn">Proceed to Payment</button>
           <a class="c-summary-box__cancel-btn" href="#">Cancel Order</a>
         </div>
       </div>
